@@ -11,10 +11,16 @@
         <content type="html"><![CDATA[<h1 id="uv，这是一个python的环境管理工具。"><a href="#uv，这是一个python的环境管理工具。" class="headerlink" title="uv，这是一个python的环境管理工具。"></a>uv，这是一个python的环境管理工具。</h1><p>使用方法：</p><p>uv安装（Windows）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1 | iex&quot;</span><br></pre></td></tr></table></figure><p>uv安装（mac os）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -LsSf https://astral.sh/uv/install.sh | sh</span><br></pre></td></tr></table></figure><p>检测uv是否成功只需要在命令窗口里输入   uv   即可。</p><p>使用uv下载管理python：</p><p>查看可下载的python版本和已安装的python版本。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv python list</span><br></pre></td></tr></table></figure><p>下载python（这里以python3.13为例）。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv python install 3.13</span><br></pre></td></tr></table></figure><p>使用uv初始化项目：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv init</span><br></pre></td></tr></table></figure><p>使用uv生成虚拟环境：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv venv</span><br></pre></td></tr></table></figure><p>使用uv下载python库（这里以pygame为例）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv add pygame</span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> github开源项目推荐 </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> github </tag>
+            <tag> GitHub </tag>
             
         </tags>
       
