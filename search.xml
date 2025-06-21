@@ -107,7 +107,7 @@
       <link href="/2025/05/30/%E7%94%A8github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html"/>
       <url>/2025/05/30/%E7%94%A8github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html</url>
       
-        <content type="html"><![CDATA[<h1 id="第一步：搭建博客"><a href="#第一步：搭建博客" class="headerlink" title="第一步：搭建博客"></a>第一步：搭建博客</h1><p>首先在浏览器输入 <a href="https://github.com/Meekdai/Gmeek">https://github.com/Meekdai/Gmeek</a> 并打开。</p><p>在仓库主页往下滑找到通过模板创建仓库。</p><p>![](.&#x2F;用github搭建博客图片 (5).png)</p><p>在创建仓库页面填写：自定义三级域名.github.io（比如：hzc.github.io）。</p><p>![](.&#x2F;用github搭建博客图片 (4).png)</p><p>创建完成后，在pages中选择github Actions</p><p>![](.&#x2F;用github搭建博客图片 (6).png)</p><p>等大约3分钟，在浏览器网址栏输入刚才的仓库的名称（xxx.github.io）即可打开博客页面。</p><h1 id="第二步：写作"><a href="#第二步：写作" class="headerlink" title="第二步：写作"></a>第二步：写作</h1><p>在仓库上方导航栏选择issues。</p><p>![](.&#x2F;用github搭建博客图片 (2).png)</p><p>进入选择new issue。</p><p>![](.&#x2F;用github搭建博客图片 (3).png)</p><p>在文本编辑器页面就可以编写发布文章。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="第一步：搭建博客"><a href="#第一步：搭建博客" class="headerlink" title="第一步：搭建博客"></a>第一步：搭建博客</h1><p>首先在浏览器输入 <a href="https://github.com/Meekdai/Gmeek">https://github.com/Meekdai/Gmeek</a> 并打开。</p><p>在仓库主页往下滑找到通过模板创建仓库。</p><p>![](.&#x2F;用github搭建博客&#x2F;图片 (5).png)</p><p>在创建仓库页面填写：自定义三级域名.github.io（比如：hzc.github.io）。</p><p>![](.&#x2F;用github搭建博客&#x2F;图片 (4).png)</p><p>创建完成后，在pages中选择github Actions</p><p>![](.&#x2F;用github搭建博客&#x2F;图片 (6).png)</p><p>等大约3分钟，在浏览器网址栏输入刚才的仓库的名称（xxx.github.io）即可打开博客页面。</p><h1 id="第二步：写作"><a href="#第二步：写作" class="headerlink" title="第二步：写作"></a>第二步：写作</h1><p>在仓库上方导航栏选择issues。</p><p>![](.&#x2F;用github搭建博客&#x2F;图片 (2).png)</p><p>进入选择new issue。</p><p>![](.&#x2F;用github搭建博客&#x2F;图片 (3).png)</p><p>在文本编辑器页面就可以编写发布文章。</p>]]></content>
       
       
       
