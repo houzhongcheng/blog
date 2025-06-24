@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>github开源项目推荐1</title>
+      <link href="/2025/06/17/github%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%8E%A8%E8%8D%901.html"/>
+      <url>/2025/06/17/github%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%8E%A8%E8%8D%901.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="uv，这是一个python的环境管理工具。"><a href="#uv，这是一个python的环境管理工具。" class="headerlink" title="uv，这是一个python的环境管理工具。"></a>uv，这是一个python的环境管理工具。</h1><p>使用方法：</p><p>uv安装（Windows）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1 | iex&quot;</span><br></pre></td></tr></table></figure><p>uv安装（mac os）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -LsSf https://astral.sh/uv/install.sh | sh</span><br></pre></td></tr></table></figure><p>检测uv是否成功只需要在命令窗口里输入   uv   即可。</p><p>使用uv下载管理python：</p><p>查看可下载的python版本和已安装的python版本。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv python list</span><br></pre></td></tr></table></figure><p>下载python（这里以python3.13为例）。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv python install 3.13</span><br></pre></td></tr></table></figure><p>使用uv初始化项目：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv init</span><br></pre></td></tr></table></figure><p>使用uv生成虚拟环境：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv venv</span><br></pre></td></tr></table></figure><p>使用uv下载python库（这里以pygame为例）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv add pygame</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> github开源项目推荐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用cloudflare和github搭建网站监测器</title>
+      <link href="/2025/05/30/%E7%94%A8cloudflare%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E7%9B%91%E6%B5%8B%E5%99%A8.html"/>
+      <url>/2025/05/30/%E7%94%A8cloudflare%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E7%9B%91%E6%B5%8B%E5%99%A8.html</url>
+      
+        <content type="html"><![CDATA[<p>首先进入github的这个仓库 <a href="https://github.com/imsyy/site-status">https://github.com/imsyy/site-status</a> 点击releases下载代码到本地。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621164722077.png"></p><p>下载好之后在桌面解压，解压完在任务栏找到Windows标识点击并搜索cmd。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621164722123.png"></p><p>找到后点击以管理员身份运行。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621164722164.png"></p><p>进入命令提示符后，更改并输入以下代码。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd 您的路径\您的文件夹名称</span><br></pre></td></tr></table></figure><p>在输入。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure><p>等待执行完成后输入。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm install</span><br></pre></td></tr></table></figure><p>输入好后先不要退出，再进入以下网址 <a href="https://dashboard.uptimerobot.com/monitors">https://dashboard.uptimerobot.com/monitors</a> 进入后创建一个免费的站点监控。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621164722201.png"></p><p>然后进入api创建页面创建一个只读api并复制。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621164722237.png"></p><p>创建好之后进入提前下载好的项目文件进入.env文件。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621164722275.png"></p><p>然后把第四行删除再把VITE_API_KEY处填写刚才复制的api。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621164722314.png"></p><p>然后把第三行取消注释（就是把开头的#还有空格删掉），然后按照注释完成代码更改。</p><p>随后再次进入cmd输入以下代码。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm run build</span><br></pre></td></tr></table></figure><p>等待执行完成文件夹内会出现dist文件夹。</p><p>然后打开github <a href="https://github.com/">https://github.com/</a> 新建仓库，创建好后进入仓库上传文件将dist文件内的所有文件拖动到上传框内（注意不要在文件管理器内选择）。</p><p>上传好之后进入cloudflare <a href="https://dash.cloudflare.com/">https://dash.cloudflare.com/</a> 进入workers和pages选择创建。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621164721931.png"></p><p>然后点击连接到git，点击后会有选择让你登陆github还是其他，这里直接点击登录github，登录选择刚才的github仓库就可以了。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165210976.png"></p><p>等待春创建完成选择自定义域绑定好域名就可以访问了。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621164722001.png"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> cloudflare </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用github搭建博客</title>
+      <link href="/2025/05/30/%E7%94%A8github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html"/>
+      <url>/2025/05/30/%E7%94%A8github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一步：搭建博客"><a href="#第一步：搭建博客" class="headerlink" title="第一步：搭建博客"></a>第一步：搭建博客</h1><p>首先在浏览器输入 <a href="https://github.com/Meekdai/Gmeek">https://github.com/Meekdai/Gmeek</a> 并打开。</p><p>在仓库主页往下滑找到通过模板创建仓库。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621163904052.png"></p><p>在创建仓库页面填写：自定义三级域名.github.io（比如：hzc.github.io）。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621163904011.png"></p><p>创建完成后，在pages中选择github Actions</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621163903858.png"></p><p>等大约3分钟，在浏览器网址栏输入刚才的仓库的名称（xxx.github.io）即可打开博客页面。</p><h1 id="第二步：写作"><a href="#第二步：写作" class="headerlink" title="第二步：写作"></a>第二步：写作</h1><p>在仓库上方导航栏选择issues。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621163903929.png"></p><p>进入选择new issue。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621163903972.png"></p><p>在文本编辑器页面就可以编写发布文章。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用cloudflare搭建短链接网站</title>
+      <link href="/2025/05/30/%E7%94%A8cloudflare%E6%90%AD%E5%BB%BA%E7%9F%AD%E9%93%BE%E6%8E%A5%E7%BD%91%E7%AB%99.html"/>
+      <url>/2025/05/30/%E7%94%A8cloudflare%E6%90%AD%E5%BB%BA%E7%9F%AD%E9%93%BE%E6%8E%A5%E7%BD%91%E7%AB%99.html</url>
+      
+        <content type="html"><![CDATA[<p>首先进入cloudflare官网 <a href="https://dash.cloudflare.com/">https://dash.cloudflare.com/</a> 选择workers和pages并点击创建。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165345401.png"></p><p>选择hello world。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165345439.png"></p><p>直接点击部署。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165345477.png"></p><p>在顶部点击修改代码，并将代码修改为此网址代码（ <a href="https://github.com/xyTom/Url-Shorten-Worker/blob/main/index.js">https://github.com/xyTom/Url-Shorten-Worker/blob/main/index.js</a> ）</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165345519.png"></p><p>点击部署，在点击存储和数据库创建kv并命名为“links”。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165345562.png"></p><p>创建好再次进入刚才创建好的workers点击绑定，选择kv命名空间，变量输入大写links在下方选择刚才links（就是刚才创建的kv命名空间）。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165345606.png"></p><p>再点击域和路由，选择添加并输入    url.域名    就可以了。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165345641.png"></p><p>等待一段时间就可以通过这个域名访问了。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165345364.png"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> cloudflare </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用cloudflare搭建博客</title>
+      <link href="/2025/05/30/%E7%94%A8cloudflare%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html"/>
+      <url>/2025/05/30/%E7%94%A8cloudflare%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h1><p>首先进入cloudflare官网 <a href="https://dash.cloudflare.com/">https://dash.cloudflare.com</a> 登录并点击添加域。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165808623.png"></p><p>然后输入购买好的域名或免费域名（获取免费域名文章 <a href="https://blog.houzhongcheng.com/2025/05/30/%E7%99%BD%E5%AB%96%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/">https://blog.houzhongcheng.com/2025/05/30/%E7%99%BD%E5%AB%96%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/</a>）。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165808662.png"></p><p>选择免费计划。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165808707.png"></p><p>然后将cloudflare给的DNS记录填入域名的DNS记录。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165808758.png"></p><h1 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h1><p>添加好之后点击workers路由再点击管理workers。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165808808.png"></p><p>点击创建workers后点击部署，然后选择编辑代码将原来代码删除换成以下网址代码，并按照注释进行调整（在网址那一栏必需要填入带三级域名的网址）。</p><p><a href="https://github.com/gdtool/cloudflare-workers-blog/blob/master/index.js">https://github.com/gdtool/cloudflare-workers-blog/blob/master/index.js</a></p><p>点击部署并保存。随后点击存储和数据库选择kv。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165808849.png"></p><p>点击创建，并输入名称。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165808899.png"></p><p>然后再次进入刚才创建的workers点击绑定选择添加kv命名空间，并在变量名里填入大写的cfblog，kv命名空间就填入刚才创建的kv命名空间。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/pic20250621165808589.png"></p><p>随后选择域和路由点击添加自定义域填写在代码里填入的域名网址就搭建好了。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> cloudflare </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>白嫖免费域名</title>
+      <link href="/2025/05/30/%E7%99%BD%E5%AB%96%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D.html"/>
+      <url>/2025/05/30/%E7%99%BD%E5%AB%96%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一步：注册"><a href="#第一步：注册" class="headerlink" title="第一步：注册"></a>第一步：注册</h1><p>首先进入 <a href="https://www.cloudns.net/">https://www.cloudns.net</a> 在右上角把语言改成中文，并点击登记。没有账户可以注册一个。</p><p>进入后选择创建区域。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/picPixPin_2025-03-23_11-54-16.png"></p><p>选择免费区域。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/picPixPin_2025-03-23_11-55-29.png"></p><p>在免费区域页面输入想注册的域名。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/picPixPin_2025-03-23_12-00-02.png"></p><p>注册好后会进入管理页面。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/picPixPin_2025-03-23_12-02-10.png"></p><h1 id="第二步：托管到cloudflare"><a href="#第二步：托管到cloudflare" class="headerlink" title="第二步：托管到cloudflare"></a>第二步：托管到cloudflare</h1><p>打开cloudflare官网 <a href="https://dash.cloudflare.com/">https://dash.cloudflare.com</a> 点击语言改成中文，然后登陆，没有账户可以注册一个。</p><p>然后选择新建域输入需要托管的域名（刚才注册的）。然后选择免费计划（free）</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/picPixPin_2025-03-23_12-12-42.png"></p><p>点击下一步然后再次进入cloudns网站的管理界面把原有的记录删除。再把cloudflare提供的记录新建并保存到记录。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/picPixPin_2025-03-23_12-16-36.png"></p><p>等待一会就可以看到cloudflare网站上你托管的域名打上了对钩。</p><p><img src="https://raw.githubusercontent.com/houzhongcheng/houzhongcheng_picture/main/picPixPin_2025-03-23_12-23-31.png"></p><p>这样就托管完成了。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 域名 </tag>
+            
+            <tag> 免费资源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2025/05/30/hello-world.html"/>
+      <url>/2025/05/30/hello-world.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
